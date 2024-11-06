@@ -12,15 +12,13 @@ function sumaTodos(array) {
   // Nota: Los numeros estan ordenados de menor a mayor.
 
   // Tu código aca:
-
-  let sum = 0;
-  
-  for (let i = array[0]; i <= array[1]; i++) {
-    sum += i;
+  const a = array[0]
+  const b = array[1]
+  let c = 0
+  for( let i = a; i <= b; i++){
+    c+= i
   }
-  
-  return sum;
-  
+  return c
 }
 
 // No modifiques nada debajo de esta linea //

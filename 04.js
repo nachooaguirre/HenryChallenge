@@ -14,9 +14,11 @@ function numeroSimetrico(num) {
 
   // Tu código:
 
-  let a = num.toString();
-  let b = a.split('').reverse().join('');
-  return a === b;
+  const a = num.toString()
+
+  const b = a.split('').reverse().join('')
+
+  return a === b 
 }
 
 // No modifiques nada debajo de esta linea //

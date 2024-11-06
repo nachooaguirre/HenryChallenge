@@ -5,6 +5,8 @@
   No comentar la funcion 
 */
 
+const numeroSimetrico = require("./04")
+
 
 function soloNumeros(array) {
   // La funcion llamada 'soloNumeros' recibe como argumento un arreglo de enteros y strings llamado 'array'.
@@ -13,12 +15,11 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-let arr = []
-  for (let i = 0; i < array.length; i++) {
-    if(typeof(array[i]) === 'number') arr.push(array[i])
-  }
-  return arr
- 
+    for (let index = 0; index < array.length; index++) {
+      if( array[index] === 'number'){
+        return array[index]
+      }
+    }
 }
 
 // No modifiques nada debajo de esta linea //

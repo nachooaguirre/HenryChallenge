@@ -24,13 +24,11 @@ function checkInventario(inventario, item) {
   // checkInventario(inventario, 'tenedor') devuelve => 6
 
   // Tu código aca:
-for(let i = 0 ; i < inventario.length; i++){
-  if(inventario[i].nombre===item){ 
-    return(inventario[i].cantidad)
-  }else if(i == inventario.length-1){
-    return 0
-  }
-}
+
+  const foundItem = inventario.find(element => element.nombre === item);
+
+  
+  return foundItem ? foundItem.cantidad : 0;
 
 
 }

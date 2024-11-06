@@ -14,13 +14,17 @@ function cuantosRepetidos(array, elemento) {
   // Nota: Podes usar for loops anidados.
 
   // Tu código aca:
-  let q = 0
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array[i].length; j++) {
-      if(array[i][j] === elemento) q++
+
+  let count = 0
+for (let i = 0; i < array.length; i++) {
+  for (let j = 0; j < array[i].length; j++) {
+    if(array[i][j] === elemento){
+      count++
     }
   }
-  return q
+  
+}
+return count
 }
 
 // No modifiques nada debajo de esta linea //

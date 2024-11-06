@@ -20,16 +20,9 @@ function index() {
 
   // Tu código aca:
 
-  Object.defineProperty(Array.prototype, 'encontraIndex', {
-    value: function(numero) {
-      for(let i = 0; i < this.length ; i++){
-          if(this[i] === numero){
-         return i
-          }
-    }
-    return  -1
-    }
-});
+  Array.prototype.encontraIndex = function(elemento) {
+    return this.findIndex(e => e === elemento);
+  };
 };
 
 // No modifiques nada debajo de esta linea //
